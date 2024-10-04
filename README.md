@@ -424,7 +424,7 @@ def stop(self):
 car1 = Car('Red', 'Toyota')
 car2 = Car('Blue', 'Honda')
 ```
-1. **Inheritance**: Inheritance ek tarah ka mechanism hai jisse ek class dusri class ki properties aur methods inherit ya use kar sakti hai. Jaise, hum ek 'ElectricCar' class bana sakte hai jo 'Car' class ki properties aur methods inherit karegi aur kuch new properties aur methods add karegi.
+2. **Inheritance**: Inheritance ek tarah ka mechanism hai jisse ek class dusri class ki properties aur methods inherit ya use kar sakti hai. Jaise, hum ek 'ElectricCar' class bana sakte hai jo 'Car' class ki properties aur methods inherit karegi aur kuch new properties aur methods add karegi.
 ```
 class ElectricCar(Car):
 def __init__(self, color, brand, battery_capacity):
@@ -434,13 +434,13 @@ def __init__(self, color, brand, battery_capacity):
 def charge(self):
     print("Car is charging")
 ```
-1. **Polymorphism**: Polymorphism se hum ek hi interface se different methods ko call kar sakte hai. Jaise, hum 'start' method ko 'Car' aur 'ElectricCar' dono objects par call kar sakte hai.
+3. **Polymorphism**: Polymorphism se hum ek hi interface se different methods ko call kar sakte hai. Jaise, hum 'start' method ko 'Car' aur 'ElectricCar' dono objects par call kar sakte hai.
 ```
 car1.start()  # prints "Car is starting"
 electric_car1 = ElectricCar('Green', 'Tesla', 100)
 electric_car1.start()  # prints "Car is starting"
 ```
-1. **Encapsulation**: Encapsulation se hum data ko hide kar sakte hai. Jaise, hum 'Car' class me 'speed' variable ko private bana sakte hai jisse wo sirf 'Car' class ke andar hi accessible ho.
+4. **Encapsulation**: Encapsulation se hum data ko hide kar sakte hai. Jaise, hum 'Car' class me 'speed' variable ko private bana sakte hai jisse wo sirf 'Car' class ke andar hi accessible ho.
 ```
 class Car:
 def __init__(self, color, brand):
@@ -448,3 +448,4 @@ def __init__(self, color, brand):
     self.brand = brand
     self.__speed = 0
 ```
+5. **Data Abstraction**: A basic principle of OOP
