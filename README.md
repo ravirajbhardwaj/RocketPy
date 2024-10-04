@@ -33,6 +33,7 @@ userName = "Ravi"
 - Floating Point
 - Boolean
 - Complex
+  
 **Sequences Type :-**
 
 - String
